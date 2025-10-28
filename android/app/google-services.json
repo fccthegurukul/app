@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "247165886071",
+    "firebase_url": "https://fccthegurukul-2-default-rtdb.firebaseio.com",
+    "project_id": "fccthegurukul-2",
+    "storage_bucket": "fccthegurukul-2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247165886071:android:b364fa0b8745ae969e3072",
+        "android_client_info": {
+          "package_name": "in.fccthegurukul.fcc_the_gurukul"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxdpT0ZXRtCUnwscQhnGir8pxOwLEiWsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
