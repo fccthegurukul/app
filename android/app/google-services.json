@@ -24,6 +24,25 @@
           "other_platform_oauth_client": []
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247165886071:android:842a15dbca60096c9e3072",
+        "android_client_info": {
+          "package_name": "in.fccthegurukul.fcc_the_gurukul.fccthegurukul_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxdpT0ZXRtCUnwscQhnGir8pxOwLEiWsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
     }
   ],
   "configuration_version": "1"

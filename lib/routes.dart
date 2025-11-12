@@ -1,27 +1,29 @@
+// lib/config/routes.dart
+
 import 'package:flutter/material.dart';
-import 'screens/splash_screen.dart';
-import 'screens/home_screen.dart';
-import 'screens/courses_screen.dart';
-import 'screens/quiz_list_screen.dart';
-import 'screens/profile_screen.dart';
-import 'screens/settings_screen.dart';
+import '../screens/splash_screen.dart';
+import '../screens/login_screen.dart';
+import '../screens/signup_screen.dart';
+import '../screens/onboarding_screen.dart';
+import '../screens/home_screen.dart';
+import '../screens/profile_screen.dart';
 
-class Routes {
+class AppRoutes {
   static const String splash = '/';
+  static const String login = '/login';
+  static const String signup = '/signup';
+  static const String onboarding = '/onboarding';
   static const String home = '/home';
-  static const String courses = '/courses';
-  static const String quizList = '/quiz_list';
   static const String profile = '/profile';
-  static const String settings = '/settings';
 
-  static Map<String, WidgetBuilder> getAll() {
+  static Map<String, WidgetBuilder> getRoutes() {
     return {
-      splash: (_) => SplashScreen(),
-      home: (_) => HomeScreen(),
-      courses: (_) => CoursesScreen(),
-      quizList: (_) => QuizListScreen(),
-      profile: (_) => ProfileScreen(),
-      settings: (_) => SettingsScreen(),
+      splash: (context) => const SplashScreen(),
+      login: (context) => const LoginScreen(),
+      signup: (context) => const SignUpScreen(),
+      onboarding: (context) => const OnboardingScreen(),
+      home: (context) => const HomeScreen(),
+      profile: (context) => const ProfileScreen(),
     };
   }
 }
