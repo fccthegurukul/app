@@ -7,6 +7,9 @@ import '../screens/signup_screen.dart';
 import '../screens/onboarding_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/profile_screen.dart';
+import '../screens/quiz_screen.dart';
+import '../screens/course_screen.dart';
+import '../screens/news_screen.dart';
 
 class AppRoutes {
   static const String splash = '/';
@@ -15,6 +18,9 @@ class AppRoutes {
   static const String onboarding = '/onboarding';
   static const String home = '/home';
   static const String profile = '/profile';
+  static const String quiz = '/quiz';
+  static const String course = '/course';
+  static const String news = '/news';
 
   static Map<String, WidgetBuilder> getRoutes() {
     return {
@@ -24,6 +30,9 @@ class AppRoutes {
       onboarding: (context) => const OnboardingScreen(),
       home: (context) => const HomeScreen(),
       profile: (context) => const ProfileScreen(),
+      quiz: (context) => const QuizScreen(),
+      course: (context) => const CourseScreen(),
+      news: (context) => const NewsScreen(),
     };
   }
 }

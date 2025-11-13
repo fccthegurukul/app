@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../widgets/app_drawer.dart';
+import '../widgets/bottom_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -302,34 +303,8 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // ========== BOTTOM NAV (Only Home & Profile) ==========
+  // ========== BOTTOM NAV (Home, Quiz, Course, News) ==========
   Widget _buildBottomNav() {
-    return NavigationBar(
-      selectedIndex: _navIndex,
-      onDestinationSelected: (idx) {
-        if (idx == 0) {
-          // Already on home
-          setState(() => _navIndex = 0);
-        } else if (idx == 1) {
-          // Navigate to profile
-          Navigator.of(context).pushNamed('/profile').then((_) {
-            // Reset to home when coming back
-            setState(() => _navIndex = 0);
-          });
-        }
-      },
-      destinations: const [
-        NavigationDestination(
-          icon: Icon(Icons.home_outlined),
-          selectedIcon: Icon(Icons.home),
-          label: 'Home',
-        ),
-        NavigationDestination(
-          icon: Icon(Icons.person_outline),
-          selectedIcon: Icon(Icons.person),
-          label: 'Profile',
-        ),
-      ],
-    );
+    return const BottomNavBar(currentIndex: 0);
   }
 }

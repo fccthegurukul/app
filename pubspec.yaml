@@ -27,6 +27,8 @@ dependencies:
   url_launcher: ^6.3.2
   smooth_page_indicator: ^1.2.1
   pod_player: ^0.2.2
+  shared_preferences: ^2.5.3
+  flutter_pdfview: ^1.4.3
 
 
 dev_dependencies:
